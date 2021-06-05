@@ -9,7 +9,18 @@ fetch al API
 production
 
 First we git init and npm init
-then we create the file path (files)
+then we create the file path (files):
+public -> index.html
+src ->
+  pages 
+  routes
+  styles
+  utils -> index.js
+
 
 We use Babel:
 npm install @babel/core babel-loader html-webpack-plugin webpack webpack-cli webpack-dev-server --save-dev 
+
+Configurar webpack
+
+Create 2 scripts: build and start
