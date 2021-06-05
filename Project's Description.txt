@@ -1,0 +1,15 @@
+In this project we'll use the next technologies:
+
+Webpack
+Babel
+templates (pags, sections) 
+Router
+utilities
+fetch al API
+production
+
+First we git init and npm init
+then we create the file path (files)
+
+We use Babel:
+npm install @babel/core babel-loader html-webpack-plugin webpack webpack-cli webpack-dev-server --save-dev 
