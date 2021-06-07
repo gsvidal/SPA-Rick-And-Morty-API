@@ -24,3 +24,10 @@ npm install @babel/core babel-loader html-webpack-plugin webpack webpack-cli web
 Configurar webpack
 
 Create 2 scripts: build and start
+
+Config babel:
+Installing @babel/preset-env and configuring a babel config file:
+1. babel.config.json 
+or
+2. .babelrc 
+with same content
