@@ -1,7 +1,6 @@
-console.log("hello");
+import router from "./routes";
 
-const fancyFunc = () => {
-  return [1, 2];
-};
+// import regeneratorRuntime from "regenerator-runtime";
+// import 'core-js';
 
-const [a, b] = fancyFunc();
+window.addEventListener("load", router);

@@ -1,8 +1,9 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+
 module.exports = {
-  entry: "./src/index.js",
+  entry: ["regenerator-runtime", "core-js", "./src/index.js"],
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js"
@@ -22,12 +23,17 @@ module.exports = {
     extensions:  [".js"],
   },
   plugins: [
-    new HtmlWebpackPlugin([
+    new HtmlWebpackPlugin(
       {
         inject: true,
         template: "./public/index.html",
         filename: "./index.html"
       }
-    ])
+    )
   ]
+  //Creating a new port
+  //devServer: {
+  //   port: 6969,
+  //   open: true
+  // }
 }

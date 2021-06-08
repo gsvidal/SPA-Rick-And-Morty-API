@@ -31,3 +31,5 @@ Installing @babel/preset-env and configuring a babel config file:
 or
 2. .babelrc 
 with same content
+Install core-js and regenerator-runtime dependencies (ex @babel/polyfill) and set at webpack.config.js :
+entry: ["regenerator-runtime", "core-js", "./src/index.js"],
