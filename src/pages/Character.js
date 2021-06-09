@@ -5,7 +5,7 @@ const Character = () => {
         <img src="image" alt="name">
         <h2>Name</h2>
       </article>
-      <article class="Charcaters-card">
+      <article class="Characters-card">
         <h3>Episodes:</h3>
         <h3>Status:</h3>
         <h3>Species:</h3>

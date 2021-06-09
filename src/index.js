@@ -1,6 +1,6 @@
 import router from "./routes";
 
-// import regeneratorRuntime from "regenerator-runtime";
-// import 'core-js';
-
 window.addEventListener("load", router);
+
+//Routes Listener when appears a # in the route
+window.addEventListener("hashchange", router);
