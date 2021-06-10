@@ -63,7 +63,8 @@ body {
 
 .Characters-card h2 {
   color: rgb(0, 170, 0);
-  font-size: 35px;
+  background-color: rgb(250, 237, 255);
+  font-size: 25px;
   font-weight: 400;
   text-align: center;
 }
