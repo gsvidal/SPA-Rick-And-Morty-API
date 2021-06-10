@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+
+body {
+  margin: 0;
+  padding: 0 40px;
+  background-color: #dec9ff;
+  color: #3c484e;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.Header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px auto;
+  max-width: 976px;
+  min-width: 413px;
+}
+
+.Header a {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #008a75;
+}
+.Header-nav a {
+  font-size: 2rem;
+}
+.Main {
+  grid-template-columns: minmax(auto, 976px);
+  display: grid;
+  justify-content: center;
+}
+
+.Characters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  grid-row-gap: 1.5em;
+}
+
+.Characters-item {
+  text-decoration: none;
+  box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+  /* border-radius: 35px; */
+  margin: 0 0 20px 0;
+  display: block;
+  animation-duration: 2s;
+  animation-name: fade;
+}
+
+.Characters-item a {
+  text-decoration: none;
+  color: #02ccff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.Characters-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px 15px 0 0;
+}
+
+.Characters-item h2 {
+  color: rgb(108, 0, 180);
+  background-color: rgb(250, 237, 255);
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px 10px;
+  margin: 0;
+  border-radius: 0 0 15px 15px;
+  text-align: center;
+}
+
+.Characters-inner {
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1.5rem;
+  grid-row-gap: 1.5em;
+  display: grid;
+}
+
+.Characters-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none; 
+  background-color: rgb(250, 237, 255);
+  box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+  border-radius: 5px;
+  margin: 0 0 20px 0;
+  animation-duration: 2s;
+  animation-name: fade;
+}
+
+.Characters-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.Characters-card h2 {
+  color: rgb(0, 170, 0);
+  /* margin: 0; */
+  margin: auto 0;
+  font-size: 35px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.Characters-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: left;
+  margin: 20px;
+  
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#content {
+  position: relative;
+  height: 100vh;
+}
+.Main .loading {
+  position: absolute;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  border: 8px solid #dec9ff;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  animation: spin 1.75s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* @media screen and (min-width: 700px) */
