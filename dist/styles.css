@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  padding: 0 40px;
+  padding: 0 10px;
   background-color: #dec9ff;
   color: #3c484e;
   font-family: 'Open Sans', sans-serif;
@@ -12,30 +12,29 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px auto;
-  max-width: 976px;
-  min-width: 413px;
+  margin: 20px auto;
+  width: 95vw;
 }
 
 .Header a {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-decoration: none;
   color: #008a75;
 }
 .Header-nav a {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 .Main {
-  grid-template-columns: minmax(auto, 976px);
+  grid-template-columns: minmax(0, 976px);
   display: grid;
   justify-content: center;
 }
 
 .Characters {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1.5rem;
-  grid-row-gap: 1.5em;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: .5rem;
+  grid-row-gap: .5em;
 }
 
 .Characters-item {
@@ -67,10 +66,11 @@ body {
   background-color: rgb(250, 237, 255);
   font-size: 18px;
   font-weight: 700;
-  padding: 15px 10px;
+  padding: 15px 5px;
   margin: 0;
   border-radius: 0 0 15px 15px;
   text-align: center;
+  vertical-align: bottom;
 }
 
 .Characters-inner {
@@ -145,4 +145,39 @@ body {
   100% { transform: rotate(360deg); }
 }
 
-/* @media screen and (min-width: 700px) */
+@media screen and (min-width: 320px) {
+
+  .Header a {
+    font-size: 2rem;
+  }
+  .Header-nav a {
+    font-size: 1.5rem;
+  }
+  .Characters {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    grid-row-gap: 1.5em;
+  }
+
+
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    padding: 0 30px;
+   }
+   .Header-main {
+    max-width: 976px;
+   }
+  .Header a {
+    font-size: 2.5rem;
+  }
+  .Header-nav a {
+    font-size: 2rem;
+  }
+  .Characters {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+
+}
